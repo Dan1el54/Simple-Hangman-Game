@@ -7,7 +7,7 @@
 #* Take a number N as input and output the sum of all numbers from 1 to N(including N).
 
 #* Sample Input
-#* 100
+#* 100 
 
 #* Sample Output
 #* 5050
@@ -18,8 +18,16 @@
 #/ You can iterate over a range and calculate the sum of all numbers in the range.
 #/ Remember, range(a, b) does not include b, thus you need to use b+1 to include b in the range.
 
-
+#
 N = int(input())
+#how about now?
+
 #!your code goes here
+
+
+
+
+
+
 
 
