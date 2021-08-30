@@ -21,3 +21,5 @@
 
 N = int(input())
 #!your code goes here
+
+
