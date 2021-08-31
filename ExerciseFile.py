@@ -1,6 +1,4 @@
 
-from ast import In
-
 
 text = input()
 word = input()
@@ -13,4 +11,32 @@ def search(text,word):
        return "Word not Found"
     
 print(search(text, word))
+#put the taskkk
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
