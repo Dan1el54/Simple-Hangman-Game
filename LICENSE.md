@@ -5,7 +5,7 @@ images in any form either digital, non-digital, textual, graphical or written fo
 You are allowed to share the links to the repository but not the content for any sort of 
 usage that involves the content of this repository taken out of the repository and be shared 
 from any other medium including but not limited to blog posts, articles, newsletters, you must 
-get prior consent from the understated. Theseconditions do not apply to the readonly GitHub 
+get prior consent from the understated. These conditions do not apply to the readonly GitHub 
 forks created using the Fork button on GitHub with the whole purpose of contributing to the project.
 
-Copyright © 2021 Daniel Rupp
+Copyright © 2021 Daniel Rupp 
