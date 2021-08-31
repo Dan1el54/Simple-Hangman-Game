@@ -1,41 +1,36 @@
+#! don't delete thisss
 
+# Search Engine
 
-text = input()
-word = input()
-#* no no tere how it was it works and these 2 are from the original code from the site
-#? at least we try
-#* just look ok?
+# Youre working on a search engine. Watch your back Google!
+
+# The given code takes a text and a word as input and passes them to a function called search().
+
+# The search() function should return:
+#! The search() function should return "Word found" if the word is present in the text, or "Word not found", if its not. (this is the key word)
+#? word must be present in text 
+#* yes but present in this case is the if 
+#*if word is present in text
+#* you see in blue? they say i need to define search()
+
+# Sample Input
+# "This is awesome"
+# "awesome"
+
+# Sample Output
+# Word found
+
+#NOTE: Define the search() function, so that the given code works as expected.
+
 
 def search(text,word):  
     if word in text:
-        return "Word Found"
+        return("Word found")
     else:
-       return "Word not Found"
+        return("Word not found")
     
-print(search(text, word))
+text = input() 
+word = input()            
+print (search(text, word))
 
-
-
-#i got it niel!
-#don't define as search
-#* but thats the original code
-#? if the code iss write then what they wantttttt
-#* idk tere im so confused
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#* im eating lunch and then we can continue
