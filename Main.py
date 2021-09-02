@@ -8,3 +8,7 @@
 #! In this way, all letters of the word are to be guessed before all the chances are over.
 #! For convenience, we have given length of word + 2 chances.
 #! For example, word to be guessed is mango, then user gets 5 + 2 = 7 chances, as mango is a five letter word.
+#? ola. im back
+
+
+#* you back?
