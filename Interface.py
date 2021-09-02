@@ -1,5 +1,5 @@
 
-#*Loops
+
 
 print("astaga seksi bgt gue")
 print(2+2)
