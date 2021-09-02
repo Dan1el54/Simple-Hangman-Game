@@ -1,5 +1,11 @@
 
-
+#? oh god why thiss
+#* we change this file it will not stay like this
+#* you having access to all the files? yes
+#* ok coollll
+#? make a new workspaceee. oh wait i can do it
+#*hmm new?
+#* why a new one
 
 print("astaga seksi bgt gue")
 print(2+2)
