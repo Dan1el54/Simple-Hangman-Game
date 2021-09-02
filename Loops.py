@@ -1,4 +1,6 @@
-#bisaaa!!
+
+#*Loops
+
 print("astaga seksi bgt gue")
 print(2+2)
 myNum=2011
