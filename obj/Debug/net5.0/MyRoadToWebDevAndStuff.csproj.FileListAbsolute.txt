@@ -1,0 +1,16 @@
+C:\Users\Daniel\OneDrive\Archiv\OnlineCourses\GitHub\MyRoadToWebDevAndStuff\bin\Debug\net5.0\MyRoadToWebDevAndStuff.exe
+C:\Users\Daniel\OneDrive\Archiv\OnlineCourses\GitHub\MyRoadToWebDevAndStuff\bin\Debug\net5.0\MyRoadToWebDevAndStuff.deps.json
+C:\Users\Daniel\OneDrive\Archiv\OnlineCourses\GitHub\MyRoadToWebDevAndStuff\bin\Debug\net5.0\MyRoadToWebDevAndStuff.runtimeconfig.json
+C:\Users\Daniel\OneDrive\Archiv\OnlineCourses\GitHub\MyRoadToWebDevAndStuff\bin\Debug\net5.0\MyRoadToWebDevAndStuff.runtimeconfig.dev.json
+C:\Users\Daniel\OneDrive\Archiv\OnlineCourses\GitHub\MyRoadToWebDevAndStuff\bin\Debug\net5.0\MyRoadToWebDevAndStuff.dll
+C:\Users\Daniel\OneDrive\Archiv\OnlineCourses\GitHub\MyRoadToWebDevAndStuff\bin\Debug\net5.0\ref\MyRoadToWebDevAndStuff.dll
+C:\Users\Daniel\OneDrive\Archiv\OnlineCourses\GitHub\MyRoadToWebDevAndStuff\bin\Debug\net5.0\MyRoadToWebDevAndStuff.pdb
+C:\Users\Daniel\OneDrive\Archiv\OnlineCourses\GitHub\MyRoadToWebDevAndStuff\obj\Debug\net5.0\MyRoadToWebDevAndStuff.csproj.AssemblyReference.cache
+C:\Users\Daniel\OneDrive\Archiv\OnlineCourses\GitHub\MyRoadToWebDevAndStuff\obj\Debug\net5.0\MyRoadToWebDevAndStuff.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Daniel\OneDrive\Archiv\OnlineCourses\GitHub\MyRoadToWebDevAndStuff\obj\Debug\net5.0\MyRoadToWebDevAndStuff.AssemblyInfoInputs.cache
+C:\Users\Daniel\OneDrive\Archiv\OnlineCourses\GitHub\MyRoadToWebDevAndStuff\obj\Debug\net5.0\MyRoadToWebDevAndStuff.AssemblyInfo.cs
+C:\Users\Daniel\OneDrive\Archiv\OnlineCourses\GitHub\MyRoadToWebDevAndStuff\obj\Debug\net5.0\MyRoadToWebDevAndStuff.csproj.CoreCompileInputs.cache
+C:\Users\Daniel\OneDrive\Archiv\OnlineCourses\GitHub\MyRoadToWebDevAndStuff\obj\Debug\net5.0\MyRoadToWebDevAndStuff.dll
+C:\Users\Daniel\OneDrive\Archiv\OnlineCourses\GitHub\MyRoadToWebDevAndStuff\obj\Debug\net5.0\ref\MyRoadToWebDevAndStuff.dll
+C:\Users\Daniel\OneDrive\Archiv\OnlineCourses\GitHub\MyRoadToWebDevAndStuff\obj\Debug\net5.0\MyRoadToWebDevAndStuff.pdb
+C:\Users\Daniel\OneDrive\Archiv\OnlineCourses\GitHub\MyRoadToWebDevAndStuff\obj\Debug\net5.0\MyRoadToWebDevAndStuff.genruntimeconfig.cache
