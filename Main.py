@@ -4,15 +4,44 @@ import NumberGuessing
 import WordGuessing
 
 
-Frame(width=400, height=250)
-text_box1 = Text(width=50, height=20)
+window = Tk()
+window.title('PythonGuides')
+window.geometry('400x300')
+window.config(bg='#A67449')
+
+message = '''
+This is Test Text for a box. 
+CCOOOLLLLLL
+'''
+text_box = Text(
+    window,
+    height=13,
+    width=40
+)
+text_box.pack(expand=True)
+text_box.insert('end', message)
+message2 = '''
+This is Test Text for a box. 
+CCOOOLLLLLL
+'''
+text_box2 = Text(
+    window,
+    height=20,
+    width=40
+)
+text_box2.pack(expand=True)
+text_box2.insert('end', message2)
+window.mainloop()
+
+
+
 
 print(" Welcome to our GameHub! \n")
 print("Please write your name: ")
 name = input ()
 print("Glad to know you " + name)
 print("After this you decide which of the 3 Games you want to Play:")
-
+Menu()
 def Menu(ans=True): 
     while ans:
         print("""
@@ -39,6 +68,9 @@ def replay():
     response = input("play again? enter 'yes' or 'no'")
 
     if response == "yes":
-        return "fff"
-        #NOTE back to game
-    
+        return window()
+        #note back to game
+    else:
+      window()
+
+        
