@@ -1,5 +1,5 @@
 
-from ast import Break, Return
+from ast import Break
 from tkinter import *
 import Hangman
 import NumberGuessing
