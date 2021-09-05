@@ -40,7 +40,7 @@ name = input ()
 print("Glad to know you " + name)
 print("After this you decide which of the 3 Games you want to Play:")
 Menu()
-ans=True
+ans=False
 while ans:
         print("""
         1.Hangman
@@ -57,7 +57,7 @@ elif ans == "3":
       WordGuessing
 elif ans == "4":
       print("\n Goodbye")
-      ans = False
+      ans = True
 else:
        print("\n Not Valid Choice Try again")
 
