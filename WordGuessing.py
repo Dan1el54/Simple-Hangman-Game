@@ -47,9 +47,9 @@ while gameWon is False or lives > 0:
     if guess in word:
       index=0
       if i == guess:
-        check[index]=guess
+        check[index]==guess
         index += 1
-    right()
+      right()
       
   
     
