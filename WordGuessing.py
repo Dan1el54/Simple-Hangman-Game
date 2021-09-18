@@ -9,43 +9,52 @@ from image import hangman
 print (hangman[0])
 word = random.choice(word)
 length = len(word)
-check = length * " _ "
+check = length * "_"
 print(check)
-guessed_letter = []
+print ("length of the word is", length)
 lives = 6
 wrong = 0
-gameWon = False
+gameEnd = False
 
-
-def Won():
-  if gameWon == False:
-    print ("Game Over")
-    time.sleep(0.5)
-    print ("the word is:", word)
-  else:
-    print ("Congratulation! You are a Champ")
-
-
-
-while lives > 0:
-  guess = input ("guess a letter or word: ")
-  time.sleep(0.1)
+def gameWon():
   if guess == word:
-    gameWon = True
-    Won()
+    gameEnd = True
+    print ("Congratulation! You won!")
+    print (hangman[lives])
+  if lives == 0:
+    gameEnd = True
+    print ("Game Over. The word is:", word)
+  else:
+    gameEnd = False
+  
+while gameEnd == False and lives > 0:
+  guess = input("guess a letter or word: ")
+  time.sleep (0.1)
+
+  if guess.isnumeric:
+    print("You enter a numeric! Enter only a letter")
+  elif len(guess) == 0:
+    print ("enter only 1 letter or a whole word") 
+  elif len(guess) == len(word):
+    if guess == word:
+      gameWon()
+    else:
+      lives -= 1
+      wrong += 1
+      print (hangman[wrong])
+      print("wrong guess")
+      print ("you have remaining lives:", lives)
+  else:
+    print("input invalid. enter a letter or a word") 
     
   for i in range(length):
-    right_letter = word[i] #! New variable. contains only guessed letter that store in word
-    if guess == word [i]:
-      guessed_letter == guess #! still not working
-    elif guess not in word:
-      wrong += 1
-      print (hangman [wrong])
-      print ("you guess wrong")
+    right_letter = i
+    if word[i] == guess:
+      print(i, end="")  
+    if guess not in word:
       lives -= 1
-      print ("you have remaining lives: ",lives)
-      if lives == 0:
-        gameWon = False
-        Won()
-      break
-  
+      print ("Wrong guess. Remaining lives:", lives)
+      wrong += 1
+      print (hangman[wrong])
+    break
+  gameWon()
