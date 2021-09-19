@@ -1,8 +1,7 @@
 
 #note: this is the hangman game
-from ast import Is
 from tkinter import *
-from wordlist import word
+import wordlist
 import random
 import time
 import image
@@ -10,7 +9,7 @@ import image
 
 
 print (image.hangman[0])
-word = random.choice(word)
+word = random.choice(wordlist.word)
 length = len(word)
 check = length * " _ "
 print(check)
@@ -19,7 +18,14 @@ list_of_guess = []
 lives = 6
 wrong = 0
 gameEnd = False  #note: we need to define this. When the gameEnd is True or False
-    
+
+#note
+#+chat2
+##chat1
+#warning
+#error
+#question
+#todo
 
 def gameWon(): #note: name of define is gameWon. gameEnd is true if:
     if guess == word: #note: True if guess is word: Win. Code finish running
