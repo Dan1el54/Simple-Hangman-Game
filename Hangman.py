@@ -1,15 +1,14 @@
-#? this is the hangman game
-from multiprocessing.connection import wait
+
+#! note: this is the hangman game
 from tkinter import *
 from wordlist import word
 import random
 import time
-from image import hangman
+import image
 
 
-#! can you run this?
 
-print (hangman[0])
+print (image.hangman[0])
 word = random.choice(word)
 length = len(word)
 check = length * " _ "
@@ -20,12 +19,6 @@ lives = 6
 wrong = 0
 gameEnd = False #we need to define this. when the gameEnd is true or false
 
-#! which one is the hangman file? this one
-#? and how about that HangMan file?
-#* this is the HangMan file. oh youre r runnnnnight XD
-#? can you run this? can you run again?
-#* i did
-#* you should close all open files and open them again from the workspace
 def gameWon(gameEnd):
     if guess == word:
         gameEnd = True
@@ -48,7 +41,7 @@ while gameEnd == False and lives > 0:
     if len(guess) == 1:
         if guess.isnumeric():
             print("You enter a numeric! Enter only a letter")
-        elif guess == ["?", ">", "!", "#", "=", "%", "*", "$", ".", ","]:
+        elif guess == ["?", ">", "!", "#", "=", "%", "*", "$", ".", ","]: #? it'snot working with 2 '='
             print("Input invalid. Enter a letter or a word") 
         else:
             for i in range(length):
@@ -59,8 +52,10 @@ while gameEnd == False and lives > 0:
                     lives -= 1
                     print ("Wrong guess. Remaining lives:", lives)
                     wrong += 1
-                    break            #print (hangman[wrong])
-        
+                    print (image.hangman[wrong])
+                    break
+        #* oh and you making so much errors all the time. can you run it again?
+        #  yes wait
     else:
         while len(guess) == 0 or len(guess) > 1:
             if guess not in word:
@@ -70,11 +65,12 @@ while gameEnd == False and lives > 0:
                     gameWon()
                 else:
                     wrong += 1
-                    print (hangman[wrong])
+                    print(image.hangman[wrong])
                     lives -= 1
                     print("Wrong guess. Remaining lives:", lives)
                     break                    
                     
 gameWon()
-
-#* wait i need to eat now and i will make a new live share to make all changes clear.
+#* because everywhere errors...
+#* wait i need to eat now and i will make a new live share to make all changes
+#  clear. okay
