@@ -46,9 +46,19 @@ while gameEnd == False and lives > 0:
     if guess in list_of_guess:
       print ("You already guess that letter")
     elif guess = ["?", ">", "!", "#", "=", "%", "*", "$", ".", ","]
-    #note why there are two of this file? idk. is this from pygame? yes. ill
-    #delete the other later whhich one of them
       print("Input invalid. Enter a letter or a word") 
+    else:
+      for i in range(length):
+      right_letter = i
+      if word[i] == guess:
+        print(i, end="")  
+      if guess not in word:
+        lives -= 1
+        print ("Wrong guess. Remaining lives:", lives)
+        wrong += 1
+        print (hangman[wrong])
+      break
+  
   elif len(guess) == 0 or len(guess) > 1 :
     print ("enter only 1 letter or a whole word") 
   if len(guess) == len(word):
@@ -64,14 +74,5 @@ while gameEnd == False and lives > 0:
       print ("You have remaining lives:", lives)
   
     
-  for i in range(length):
-    right_letter = i
-    if word[i] == guess:
-      print(i, end="")  
-    if guess not in word:
-      lives -= 1
-      print ("Wrong guess. Remaining lives:", lives)
-      wrong += 1
-      print (hangman[wrong])
-    break
+  
 gameWon()
