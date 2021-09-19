@@ -1,5 +1,6 @@
 
-#! note: this is the hangman game
+#note: this is the hangman game
+from ast import Is
 from tkinter import *
 from wordlist import word
 import random
@@ -17,36 +18,40 @@ print ("length of the word is", length)
 list_of_guess = []
 lives = 6
 wrong = 0
-gameEnd = False #we need to define this. when the gameEnd is true or false
+gameEnd = False  #note: we need to define this. When the gameEnd is True or False
+    
 
-def gameWon(gameEnd):
-    if guess == word:
+def gameWon(): #note: name of define is gameWon. gameEnd is true if:
+    if guess == word: #note: True if guess is word: Win. Code finish running
         gameEnd = True
         print ("Congratulation! You won!")
-    if lives == 0:
+    elif lives == 0: #note: True if lives = 0: lose. Code finish running
         gameEnd = True
         print ("Game Over. The word is:", word)
-    else:
+    else: #note: False if anything else other than those 2 True condition. Then code while loop will run.
         gameEnd = False
-  
-while gameEnd == False and lives > 0:
+
+
+while gameEnd == False and lives > 0: 
     guess = input("guess a letter or a word: ")
     time.sleep (0.1)
     
-    if guess in list_of_guess:
+    if guess in list_of_guess: #note: condition 1: guess word that already in the list will not reduce lives and return (print)
         print ("You already guess that letter/word. Enter a new letter or word")
-        list_of_guess.append(guess)
-        break
-  
-    if len(guess) == 1:
-        if guess.isnumeric():
+
+    elif len(guess) == 0: #note: condition 2: if guess is "(no letter)", lives will not reduce
+        print ("Enter a letter or a word")
+    
+    
+    elif len(guess) == 1: #note: condition 3: length of guess is exactly 1 letter
+        if guess.isnumeric(): #note: UNDER CONDITION 3: BUT in numeric. Will not reduce lives
             print("You enter a numeric! Enter only a letter")
-        elif guess == ["?", ">", "!", "#", "=", "%", "*", "$", ".", ","]: #? it'snot working with 2 '='
+        elif guess == ["?", ">", "!", "#", "=", "%", "*", "$", ".", ","]: #warning: not working
             print("Input invalid. Enter a letter or a word") 
-        else:
+        else: #note: UNDER CONDITION 3: letter is alphabet
             for i in range(length):
                 right_letter = i
-                if word[i] == guess: #? this is not working at all
+                if word[i] == guess: #warning: this is not working at all
                     print(i, end = "")  
                 if guess not in word:
                     lives -= 1
@@ -54,23 +59,20 @@ while gameEnd == False and lives > 0:
                     wrong += 1
                     print (image.hangman[wrong])
                     break
-        #* oh and you making so much errors all the time. can you run it again?
-        #  yes wait
-    else:
-        while len(guess) == 0 or len(guess) > 1:
-            if guess not in word:
-                print ("enter only 1 letter or a whole word") 
-            if len(guess) == len(word):
-                if guess == word:
+                
+    else: #note: condition 4, if guess length is as much as word length
+        while len(guess) > 1:
+            if len(guess) == len(word): #note: UNDER CONDITION 4: ONLY works if length guess is exactly as much as length word
+                if guess == word: #note: > guess is word: win
                     gameWon()
-                else:
+                else: #note: UNDER CONDITION 4: guess is not word: lose
                     wrong += 1
                     print(image.hangman[wrong])
                     lives -= 1
-                    print("Wrong guess. Remaining lives:", lives)
-                    break                    
-                    
-gameWon()
-#* because everywhere errors...
-#* wait i need to eat now and i will make a new live share to make all changes
-#  clear. okay
+                    print("Wrong guess. Remaining lives:", lives)                  
+                    gameWon()
+            if guess not in word: #note: UNDER CONDITION 4: length guess is more than 1 (but not exactly as much as word length)
+                print ("enter only 1 letter or a whole word")
+                break
+    list_of_guess.append(guess)  #note: append function will add variable (guess) to the list_of_guess. have to be added at the last code so that the first guess will not be filtered
+
