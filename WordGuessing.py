@@ -16,19 +16,18 @@ lives = 6
 wrong = 0
 gameEnd = False
 if gameEnd:
-  Main
+ print() 
 
-<<<<<<< HEAD
 def gameWon():
   if guess == word or " _ " not in check:
-=======
+    return "gg"
+
 def gameEnd():
   return 11
 
 
 def gameWon(gameEnd):
   if guess == word:
->>>>>>> 14f1cf2ba02da751d02668556f6a23ea0c246c1b
     gameEnd = True
     print ("Congratulation! You won!")
   if lives == 0:
@@ -46,7 +45,9 @@ while gameEnd == False and lives > 0:
       print("You enter a numeric! Enter only a letter")
     if guess in list_of_guess:
       print ("You already guess that letter")
-    else:
+    elif guess = ["?", ">", "!", "#", "=", "%", "*", "$", ".", ","]
+    #note why there are two of this file? idk. is this from pygame? yes. ill
+    #delete the other later whhich one of them
       print("Input invalid. Enter a letter or a word") 
   elif len(guess) == 0 or len(guess) > 1 :
     print ("enter only 1 letter or a whole word") 
