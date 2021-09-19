@@ -9,18 +9,20 @@ from image import hangman
 print (hangman[0])
 word = random.choice(word)
 length = len(word)
-check = length * "_"
+check = length * " _ "
 print(check)
 print ("length of the word is", length)
+list_of_guess = []
 lives = 6
 wrong = 0
 gameEnd = False
+if gameEnd:
+  Main
 
 def gameWon():
-  if guess == word:
+  if guess == word or " _ " not in check:
     gameEnd = True
     print ("Congratulation! You won!")
-    print (hangman[lives])
   if lives == 0:
     gameEnd = True
     print ("Game Over. The word is:", word)
@@ -28,24 +30,30 @@ def gameWon():
     gameEnd = False
   
 while gameEnd == False and lives > 0:
-  guess = input("guess a letter or word: ")
+  guess = input("guess a letter or a word: ")
   time.sleep (0.1)
-
-  if guess.isnumeric:
-    print("You enter a numeric! Enter only a letter")
-  elif len(guess) == 0:
+  
+  if len(guess) == 1:
+    if guess.isnumeric():
+      print("You enter a numeric! Enter only a letter")
+    if guess in list_of_guess:
+      print ("You already guess that letter")
+    else:
+      print("Input invalid. Enter a letter or a word") 
+  elif len(guess) == 0 or len(guess) > 1 :
     print ("enter only 1 letter or a whole word") 
-  elif len(guess) == len(word):
+  if len(guess) == len(word):
     if guess == word:
       gameWon()
+    if guess in list_of_guess:
+      print ("you already guess that word")
     else:
-      lives -= 1
       wrong += 1
       print (hangman[wrong])
-      print("wrong guess")
-      print ("you have remaining lives:", lives)
-  else:
-    print("input invalid. enter a letter or a word") 
+      lives -= 1
+      print("Wrong Guess")
+      print ("You have remaining lives:", lives)
+  
     
   for i in range(length):
     right_letter = i
