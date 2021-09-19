@@ -73,7 +73,3 @@ while gameEnd == False and lives > 0:
             print ("You have remaining lives:", lives)
             list_of_guess.append(guess)
   gameWon() 
-
-#* but you dont have a Workspace 
-#* yours really laggy...
-#? still?

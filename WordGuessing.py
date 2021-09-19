@@ -2,7 +2,6 @@ from tkinter import *
 from wordlist import word
 import random
 import time
-import Main
 from image import hangman
 
 
@@ -19,8 +18,17 @@ gameEnd = False
 if gameEnd:
   Main
 
+<<<<<<< HEAD
 def gameWon():
   if guess == word or " _ " not in check:
+=======
+def gameEnd():
+  return 11
+
+
+def gameWon(gameEnd):
+  if guess == word:
+>>>>>>> 14f1cf2ba02da751d02668556f6a23ea0c246c1b
     gameEnd = True
     print ("Congratulation! You won!")
   if lives == 0:
@@ -65,4 +73,4 @@ while gameEnd == False and lives > 0:
       wrong += 1
       print (hangman[wrong])
     break
-  gameWon()
+gameWon()
