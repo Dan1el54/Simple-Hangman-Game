@@ -48,7 +48,7 @@ while gameEnd == False and lives > 0:
     elif len(guess) == 0: #note: condition 2: if guess is "(no letter)", lives will not reduce
         print ("Enter a letter or a word")
     
-    
+
     elif len(guess) == 1: #note: condition 3: length of guess is exactly 1 letter
         if guess.isnumeric(): #note: UNDER CONDITION 3: BUT in numeric. Will not reduce lives
             print("You enter a numeric! Enter only a letter")
@@ -57,7 +57,7 @@ while gameEnd == False and lives > 0:
         else: #note: UNDER CONDITION 3: letter is alphabet
             for i in range(length):
                 right_letter = i
-                if word[i] == guess: #warning: this is not working at all
+                if word[i] == guess: #warning: not working
                     print(i, end = "")  
                 if guess not in word:
                     lives -= 1
