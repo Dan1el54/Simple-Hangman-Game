@@ -1,5 +1,5 @@
 
-#note: this is the hangman game
+#note: HANGMAN TESTFILE
 from tkinter import *
 import wordlist
 import random
@@ -23,13 +23,6 @@ def gameEnd(gameEnd):
     if gameEnd == True:
         print(" You Won! ")
 
-#note
-#+chat2
-##chat1
-#warning
-#error
-#question
-#todo
 
 
 def gameWon():  # note: name of define is gameWon. gameEnd is true if:
