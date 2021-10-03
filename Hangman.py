@@ -19,6 +19,10 @@ lives = 6
 wrong = 0
 gameEnd = False  #note: we need to define this. When the gameEnd is True or False
 
+def gameEnd():
+    if gameEnd == True:
+        print(" You Won! ")
+
 #note
 #+chat2
 ##chat1

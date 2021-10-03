@@ -3,7 +3,7 @@
 
 from ast import Break
 from tkinter import *
-import HangMan # let's just change the hangman with other game and change this one with hangman
+import Hangman
 import time
 import NumberGuessing
 
@@ -27,7 +27,7 @@ ans = print("""
 gameNR = input("What would you like to do? ", )
 
 if gameNR == "1":
-      HangMan()
+      Hangman()
       time.sleep(0.1)
 elif gameNR == "2":
       NumberGuessing()
