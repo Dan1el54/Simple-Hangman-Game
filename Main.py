@@ -2,10 +2,8 @@
 from ast import Break
 from tkinter import *
 import Hangman
-import NumberGuessing
-import WordGuessing
 import time
-import WordGuessing
+import NumberGuessing
 
 print(" Welcome to our GameHub! \n")
 time.sleep(0.1)
@@ -20,8 +18,8 @@ gameNR = 0
 ans=True
 ans = print("""      
       1.Hangman
-      2.Guess the Number
-      3.Guess the Word
+      2.NumberGuessing
+      3.WordGuessing
       4.Exit/Quit\n
       """)
 gameNR = input("What would you like to do? ", )
@@ -32,7 +30,7 @@ if gameNR == "1":
 elif gameNR == "2":
       NumberGuessing()
 elif gameNR == "3":
-      WordGuessing
+      print ("0")
 elif gameNR == "4":
       print("\n Goodbye \n")
       ans = False
