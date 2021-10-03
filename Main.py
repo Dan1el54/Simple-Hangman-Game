@@ -1,5 +1,3 @@
-#? just keep this as introoooo
-#? why yoou change the main fileeee
 
 from ast import Break
 from tkinter import *
