@@ -17,9 +17,9 @@ print ("length of the word is", length)
 list_of_guess = []
 lives = 6
 wrong = 0
-gameEnd = False  #note: we need to define this. When the gameEnd is True or False
+#gameEnd = False  #note: we need to define this. When the gameEnd is True or False
 
-def gameEnd():
+def gameEnd(gameEnd):
     if gameEnd == True:
         print(" You Won! ")
 
