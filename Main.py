@@ -17,10 +17,10 @@ gameNR = 0
 
 ans=True
 ans = print("""      
-      1.Hangman
-      2.NumberGuessing
-      3.WordGuessing
-      4.Exit/Quit\n
+            1.Hangman
+            2.NumberGuessing
+            3.WordGuessing
+            4.Exit/Quit\n
       """)
 gameNR = input("What would you like to do? ", )
 
@@ -42,7 +42,7 @@ else:
       # window = Tk()
       # window.title('PythonGuides')
       # window.geometry('400x300')
-      # window.config(bg='#A67449')
+      # window.config(bg='')
       # message = '''
       # This is Test Text for a box.
       # CCOOOLLLLLL'''
