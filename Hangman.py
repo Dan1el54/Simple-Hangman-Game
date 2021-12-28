@@ -16,7 +16,7 @@
 # list_of_guess = []
 # lives = 6
 # wrong = 0
-#gameEnd = False  #note: we need to define this. When the gameEnd is True or False
+# gameEnd = False  #note: we need to define this. When the gameEnd is True or False
 
 
 # def gameEnd(gameEnd):
@@ -47,7 +47,7 @@
 #     guess = input("guess a letter or a word: ")
 #     time.sleep(0.1)
 
-    # note: condition 1: guess word that already in the list will not reduce lives and return (print)
+# note: condition 1: guess word that already in the list will not reduce lives and return (print)
 #     if guess in list_of_guess:
 #         print("You already guess that letter/word. Enter a new letter or word")
 
@@ -73,7 +73,7 @@
 
 #     else: # note: condition 4, if guess length is as much as word length
 #         while len(guess) > 1:
-            # note: UNDER CONDITION 4: ONLY works if length guess is exactly as much as length word
+# note: UNDER CONDITION 4: ONLY works if length guess is exactly as much as length word
 #             if len(guess) == len(word):
 #                 if guess == word:  # note: > guess is word: win
 #                     gameWon()
@@ -83,9 +83,9 @@
 #                     lives -= 1
 #                     print("Wrong guess. Remaining lives:", lives)
 #                     gameWon()
-            # note: UNDER CONDITION 4: length guess is more than 1 (but not exactly as much as word length)
+# note: UNDER CONDITION 4: length guess is more than 1 (but not exactly as much as word length)
 #             if guess not in word:
 #                 print("enter only 1 letter or a whole word")
 #                 break
-    # note: append function will add variable (guess) to the list_of_guess. have to be added at the last code so that the first guess will not be filtered
+# note: append function will add variable (guess) to the list_of_guess. have to be added at the last code so that the first guess will not be filtered
 #     list_of_guess.append(guess)

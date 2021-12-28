@@ -4,8 +4,3 @@ import random
 
 def secondGame():
     return print("NumberGuessing " + random(1, 40))
-
-
-
-
-

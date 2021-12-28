@@ -7,8 +7,7 @@ import time
 import image
 import Main
 
-#todo: we need to figure out how to import stuff from a other folder.
-
+# todo: we need to figure out how to import stuff from a other folder.
 
 
 def attr():
@@ -21,10 +20,12 @@ def attr():
     wrong = 0
     return (length, check, list_of_guess, lives, wrong, word)
 
+
 def gameStart():
     print(attr.check)
     print("length of the word is", attr.length)
     return attr.length
+
 
 def gameWon():
     if attr.guess == attr.word:
@@ -32,6 +33,7 @@ def gameWon():
     elif attr.lives == 0:
         print("Game Over. The word is:", attr.word)
     end()
+
 
 def end():
     yes = 1
@@ -42,6 +44,7 @@ def end():
     else:
         exit()
 
+
 def invalid():
     if attr.guess.isnumeric():
         print("You enter numeric! Only letters allowed")
@@ -50,13 +53,14 @@ def invalid():
     else:
         print("Input invalid. Enter a letter or a word")
 
+
 def gamePlay():
     while attr.lives > 0:
         guess = input("guess a letter or a word: ")
         time.sleep(0.1)
         if attr.guess in attr.list_of_guess:
             print("You already guess that letter/word. Enter a new letter or word")
-        elif len(attr.guess) >= 1: #warning: this will not works
+        elif len(attr.guess) >= 1:  # warning: this will not works
             for i in range(attr.length):
                 right_letter = ""
                 if attr.word[i] == guess:
@@ -73,6 +77,8 @@ def gamePlay():
     attr.list_of_guess.append(attr.guess)
     gameWon()
     invalid()
+
+
 gameStart()
 gamePlay()
 # note: append function will add variable (guess) to the list_of_guess. have to be added at the last code so that the first guess will not be filtered
